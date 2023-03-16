@@ -1,8 +1,5 @@
 @import "./styles/utils";
 
-body {
-  font-family: 'Libre Franklin', sans-serif;
-  color: $color-white;
-
-  background-color: $bc-color;
-}
+@import "./styles/page.scss";
+@import './styles/logo.scss';
+@import './styles/header.scss'
