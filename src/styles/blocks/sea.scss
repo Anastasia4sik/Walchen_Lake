@@ -1,0 +1,45 @@
+.sea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 128px;
+
+  &__img {
+    width: 424px;
+    max-height: 424px;
+  }
+
+  &__content {
+    max-width: 436px;
+    margin-left: 96px;
+
+    &__title {
+      margin-bottom: 48px;
+
+      font-weight: 800;
+      font-size: 38px;
+      text-transform: capitalize;
+    }
+
+    &__quote {
+      margin-bottom: 48px;
+      font-style: italic;
+      font-size: 16px;
+
+    }
+
+    &__desc {
+      display: block;
+      max-width: 396px;
+
+      font-weight: 500;
+      font-size: 16px;
+      &--1 {
+      margin-bottom: 18px;
+      }
+
+      &--2 {
+        margin-bottom: 36px;
+      }
+    }
+  }
+}
