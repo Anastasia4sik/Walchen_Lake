@@ -1,0 +1,43 @@
+.sideInfo {
+  display: inline-block;
+  width: 224px;
+
+  padding-left: 86px;
+  text-align: end;
+
+  &__main {
+    &__title {
+      margin-bottom: 18px;
+
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    &__desc {
+      margin-bottom: 64px;
+
+      min-width: 136px;
+
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 12px;
+
+    &::after {
+      position: absolute;
+      right: 140%;
+      bottom: 0;
+      display: block;
+      width: 64px;
+      height: 1px;
+      background: $color-white;
+      content: "";
+    }
+  }
+}
