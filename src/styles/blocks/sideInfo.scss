@@ -1,8 +1,9 @@
 .sideInfo {
-  display: inline-block;
   width: 22%;
 
   padding-left: 86px;
+
+  text-align: end;
 
   &__main {
     &__title {
@@ -18,19 +19,24 @@
 
   &__link {
     position: relative;
+
     color: $color-white;
     font-weight: 700;
     font-size: 12px;
 
     &::after {
+      content: "";
+
       position: absolute;
+      display: block;
+
       right: 140%;
       bottom: 0;
-      display: block;
+
       width: 64px;
       height: 1px;
+
       background: $color-white;
-      content: "";
     }
   }
 }

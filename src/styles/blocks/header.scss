@@ -15,14 +15,10 @@
   }
 
   &__logo {
-    display: block;
-    width: 296px;
+    width: 25%;
     height: 10vh;
 
-    background-color: $color-yellow;
-
     &__img {
-      display: block;
       margin: 24px 40px;
     }
   }
