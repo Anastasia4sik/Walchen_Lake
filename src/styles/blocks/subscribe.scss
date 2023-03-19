@@ -1,0 +1,43 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  height: 196px;
+  width: 100%;
+
+  margin: 0 auto 40px;
+  align-items: center;
+
+  background-image: url(./images/bc_map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &__title {
+    margin-bottom: 64px;
+  }
+
+  &__form {
+    display: flex;
+
+    &__input {
+      width: 30vw;
+
+      margin-right: 8px;
+      padding-left: 16px;
+
+      border-radius: 50px;
+      border: 1px solid transparent;
+      outline: none;
+
+      &::placeholder {
+        color: $bc-color;
+      }
+
+      &:hover, &:active {
+        box-shadow: 0 0 45px -7px $color-gray;
+        border-color: $color-gray;
+      }
+    }
+  }
+}
