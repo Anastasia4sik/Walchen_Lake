@@ -1,25 +1,18 @@
 .sideInfo {
   display: inline-block;
-  width: 224px;
+  width: 22%;
 
   padding-left: 86px;
-  text-align: end;
 
   &__main {
     &__title {
       margin-bottom: 18px;
-
-      font-weight: 800;
-      font-size: 18px;
     }
 
     &__desc {
       margin-bottom: 64px;
 
       min-width: 136px;
-
-      font-weight: 600;
-      font-size: 12px;
     }
   }
 

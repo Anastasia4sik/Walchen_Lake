@@ -1,7 +1,8 @@
 .spots {
   display: flex;
   width: 100vw;
-  margin-bottom: 128px;
+  height: 100vh;
+  position: relative;
 
   &__item {
     display: flex;
@@ -13,30 +14,17 @@
   }
 
   &__img {
-    height: 190px;
-    max-width: 190px;
+    height: $size-img-square;
+    max-width: $size-img-square;
     margin-bottom: 24px;
-  }
-
-  &__title {
-    font-weight: 800;
-    font-size: 18px;
   }
 
   &__location {
     margin-bottom: 18px;
-
-    font-weight: 700;
-    font-size: 13px;
-
-    color: $color-gray;
   }
 
   &__desc {
     margin-bottom: 36px;
-
-    font-weight: 600;
-    font-size: 12px;
   }
 
   &__link {
@@ -47,11 +35,10 @@
   }
 
   &__slider {
-    display: block;
+    display: flex;
     align-items: center;
-    margin-left: 86px;
-
-    max-width: 708px;
+    position: absolute;
+    width: 60%;
 
     &__wrapper {
       position: relative;

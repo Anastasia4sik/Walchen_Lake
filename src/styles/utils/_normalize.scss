@@ -13,16 +13,41 @@ ul {
 }
 
 .main-container {
-  padding: 0 16px;
+  // padding: 0 16px;
 
-  @include onTablet {
-    min-width: 640px;
-    padding: 0 24px;
-  }
+  // @include onTablet {
+  //   min-width: 640px;
+  //   padding: 0 24px;
+  // }
 
-  @include onDesktop {
-    margin: 0 auto;
+    margin-left: 25%;
     width: 1200px;
-    padding: 0 32px;
-  }
+}
+
+.title--2 {
+  font-weight: 800;
+  font-size: 38px;
+
+  text-transform: capitalize;
+}
+
+.title--3 {
+  font-weight: 800;
+  font-size: 18px;
+
+  text-transform: capitalize;
+}
+
+.title--4 {
+  margin-bottom: 18px;
+
+  font-weight: 700;
+  font-size: 13px;
+
+  color: $color-gray;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 12px;
 }
