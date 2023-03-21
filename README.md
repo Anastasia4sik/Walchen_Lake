@@ -1,6 +1,6 @@
 <h1>The Walchen lake</h1>
 <p>
-A beautiful layout landing page about the best natural corners of the world. Enjoy it!
+Landing page layout about the best places in the world. Enjoy it!
 </p>
 
   [DEMO LINK](https://Anastasia4sik.github.io/Walchen_Lake/)
