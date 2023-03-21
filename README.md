@@ -19,6 +19,7 @@ A beautiful layout landing page about the beautiful natural corners of the world
   <img src="https://iconape.com/wp-content/files/gl/43407/svg/bem.svg" height="48"/>
 </a>
 
+---
 <br>
 
 <a href="https://developer.mozilla.org/ru/docs/Web/HTML">
