@@ -4,6 +4,7 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>The Walchen Lake</title>
+    <link rel="icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -16,10 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header id="Home" class="header">
       <div class="header__top">
         <div class="logo header__logo">
-          <a href="/">
+          <a href="#Home">
             <img
               src="./images/icons/logo.png"
               alt="trppd"
@@ -30,17 +31,18 @@
 
         <nav class="header__nav">
           <div class="header__nav__content">
-            <a href="/My_Collection" class="header__nav__content__item">
+            <a href="#My_Collection" class="header__nav__content__item">
               My collection
             </a>
 
             <a
-            href="/Galih_Pambudi"
-            class="header__nav__content__item header__nav__content__item--user">
+              href="#Galih_Pambudi"
+              class="header__nav__content__item header__nav__content__item--user"
+            >
               Galih Pambudi
             </a>
 
-            <a href="/Galih_Pambudi" class="header__nav__content__photo">
+            <a href="#Galih_Pambudi" class="header__nav__content__photo">
               <img
                 src="./images/icons/rectangle.jpg"
                 alt="Photo"
@@ -63,7 +65,7 @@
             that you never imagine before
           </p>
 
-          <a href="/Walchen_Lake" class="btn">
+          <a href="#Walchen_Lake" class="btn">
             Read more
           </a>
         </div>
@@ -72,7 +74,7 @@
       <div class="menu sideInfo">
         <ul class="menu__list">
           <li class="menu__list__item">
-            <a href="/"
+            <a href="#Home"
             class="menu__list__link"
             >
               Home
@@ -81,7 +83,7 @@
 
           <li class="menu__list__item">
             <a
-              href="/Recommendation"
+              href="#spots"
               class="menu__list__link"
             >
               Recommendation
@@ -89,7 +91,7 @@
           </li>
 
           <li class="menu__list__item">
-            <a href="/Explore"
+            <a href="#sea"
             class="menu__list__link"
             >
               Explore
@@ -97,7 +99,7 @@
           </li>
 
           <li class="menu__list__item">
-            <a href="/Help"
+            <a href="#help"
             class="menu__list__link"
             >
               Help
@@ -105,7 +107,7 @@
           </li>
 
           <li class="menu__list__item">
-            <a href="/About_Us"
+            <a href="#about_as"
             class="menu__list__link"
             >
               About Us
@@ -257,7 +259,7 @@
                     Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
                   </p>
 
-                  <a href="/Ollantaytambo" class="spots__link">
+                  <a href="#Ollantaytambo" class="spots__link">
                     read more
                   </a>
                 </div>
@@ -281,7 +283,7 @@
                     Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
                   </p>
 
-                  <a href="/Antelope_Canyon" class="spots__link">
+                  <a href="#Antelope_Canyon" class="spots__link">
                     read more
                   </a>
                 </div>
@@ -305,7 +307,7 @@
                     Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
                   </p>
 
-                  <a href="/Lake_Louise" class="spots__link">
+                  <a href="#Lake_Louise" class="spots__link">
                     read more
                   </a>
                 </div>
@@ -329,7 +331,7 @@
         </div>
       </div>
 
-      <div class="sea">
+      <div id="sea" class="sea">
         <img
           src="./images/sea.jpg"
           alt="Sea"
@@ -353,7 +355,7 @@
             Mea ea simul quaeque vocibus. Est ut verear voluptetum, vis at illud discere. Volumus rationibus cu sea, et summo ocurreret per, sit no audire scribentur. Vim et brute moderatius comprehensam. Argumentum disputando ea mel, sed clita congue an, equidem maluisset dispuntando ei ius. Vei ne enim duis. Nec ignota instructior te. Ipsum tacimates adversarium ut his. Fastidi adipisei ei cum, eum tollit percipit ne. Diam tantas te nec.
           </p>
 
-          <a href="/Sea" class="sea__btn btn">
+          <a href="#sea" class="sea__btn btn">
             Read more
           </a>
         </div>
@@ -497,7 +499,7 @@
               </p>
 
               <a
-                href="/Southern_Mountain"
+                href="#Southern_Mountain"
                 class="mountain__block__content__btn btn"
               >
                 Read more
@@ -538,7 +540,7 @@
               </p>
 
               <a
-                href="/Northern_Mountain"
+                href="#Northern_Mountain"
                 class="mountain__block__content__btn btn"
               >
                 Read more
@@ -579,7 +581,7 @@
               </p>
 
               <a
-                href="/Eastern_Mountain"
+                href="#Eastern_Mountain"
                 class="mountain__block__content__btn btn"
               >
                 Read more
@@ -597,32 +599,37 @@
         <div class="mountain__line"></div>
       </div>
 
-      <div class="subscribe">
+      <div id="help" class="subscribe">
         <h4 class="subscribe__title description">
           Subscribe to our news letter
         </h4>
 
         <form
+          id="form"
+          class="subscribe__form"
           action="#"
           method="GET"
-          class="subscribe__form"
         >
           <input
             type="email"
             name="email"
             placeholder="Your email"
             class="subscribe__form__input description"
+            required
           >
-          <button type="submit" class="btn">
+          <button
+            id="btn"
+            class="btn"
+          >
             Subscribe
           </button>
         </form>
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="about_as" class="footer">
       <div class="footer__logo logo">
-        <a href="/">
+        <a href="#Home">
           <img
             src="./images/icons/logo.png"
             alt="trppd"
@@ -638,6 +645,7 @@
       <div class="footer__links">
         <a
           href="https://www.instagram.com/"
+          target="_blank"
           class="footer__links__item"
         >
           <img
@@ -649,6 +657,7 @@
 
         <a
           href="https://www.facebook.com/"
+          target="_blank"
           class="footer__links__item"
         >
           <img
@@ -660,6 +669,7 @@
 
         <a
           href="https://twitter.com/"
+          target="_blank"
           class="footer__links__item"
         >
           <img

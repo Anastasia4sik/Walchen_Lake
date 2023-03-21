@@ -117,6 +117,10 @@
       &__img {
         width: $size-img-square;
         height: $size-img-square;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }

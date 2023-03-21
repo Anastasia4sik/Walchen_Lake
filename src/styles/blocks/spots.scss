@@ -73,6 +73,10 @@
       height: $size-img-square;
       width: $size-img-square;
       margin-bottom: 24px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     &__location {

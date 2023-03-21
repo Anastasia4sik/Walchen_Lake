@@ -20,12 +20,13 @@ const swiper = new Swiper('.swiper-container', {
       return number;
     },
   },
+});
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  this.reset();
 });
 
 const allSliders = document.querySelectorAll('.swiper-container');
