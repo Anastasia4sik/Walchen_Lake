@@ -19,6 +19,7 @@ A beautiful layout landing page about the best natural corners of the world. Enj
   <img src="https://iconape.com/wp-content/files/gl/43407/svg/bem.svg" height="48"/>
 </a>
 
+---
 <br>
 
 <a href="https://developer.mozilla.org/ru/docs/Web/HTML">
@@ -53,4 +54,4 @@ In this project, I used Swiper to implement the correct operation of the slider 
   <img src="https://iconape.com/wp-content/files/gl/43407/svg/bem.svg" height="48"/>
 </a>
 
-When writing the code, we used the convenient BEM methodology, which made it possible to use nesting in the scss file and easy presentation of which block belongs to which
+When writing the code, I used the convenient BEM methodology, which made it possible to use nesting in the scss file and easy presentation of which block belongs to which.
