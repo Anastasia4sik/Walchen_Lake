@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.scss" >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -28,7 +34,9 @@
               My collection
             </a>
 
-            <a href="/Galih_Pambudi" class="header__nav__content__item">
+            <a
+            href="/Galih_Pambudi"
+            class="header__nav__content__item header__nav__content__item--user">
               Galih Pambudi
             </a>
 
@@ -106,111 +114,105 @@
         </ul>
       </div>
 
-      <div class="header__slider slider">
-        <div class="slider__wrapper">
-          <div class="slider__slides">
-            <img
-              id="slide-1"
-              src="./images/bc_header.png"
-              alt="1"
-              class="slider__slides__img"
-            >
+      <div class="wrapper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="1"
+              >
+            </div>
 
-            <img
-              id="slide-2"
-              src="./images/bc_header.png"
-              alt="2"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="2"
+              >
+            </div>
 
-            <img
-              id="slide-3"
-              src="./images/bc_header.png"
-              alt="3"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="3"
+              >
+            </div>
 
-            <img
-              id="slide-4"
-              src="./images/bc_header.png"
-              alt="4"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="4"
+              >
+            </div>
 
-            <img
-              id="slide-5"
-              src="./images/bc_header.png"
-              alt="5"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="5"
+              >
+            </div>
 
-            <img
-              id="slide-6"
-              src="./images/bc_header.png"
-              alt="6"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="6"
+              >
+            </div>
 
-            <img
-              id="slide-7"
-              src="./images/bc_header.png"
-              alt="7"
-              class="slider__slides__img"
-            >
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="7"
+              >
+            </div>
 
-            <img
-              id="slide-8"
-              src="./images/bc_header.png"
-              alt="8"
-              class="slider__slides__img"
-            >
-
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="./images/bc_header.png"
+                alt="8"
+              >
+            </div>
           </div>
+        </div>
 
+        <div id="swiper-button-prev" class="swiper-button-prev">
+          <img
+            class="swiper-button-prev-btn"
+            src="./images/icons/arrow.png"
+            alt="left"
+          >
+        </div>
+
+        <div id="swiper-button-next" class="swiper-button-next">
+          <img
+            class="swiper-button-next-btn"
+            src="./images/icons/arrow.png"
+            alt="right"
+          >
+        </div>
+
+
+        <div id="swiper__text" class="swiper__text">
+          <h4 class="description swiper__text__title">
+            Outdoors Edition
+          </h4>
+
+          <div class="swiper__text__line swiper__text__line--1"></div>
+
+          <div id="swiper__text__number" class="description swiper-pagination"></div>
+
+          <div class="swiper__text__line swiper__text__line--2"></div>
         </div>
       </div>
 
-      <div class="slider__nav">
-        <a
-          href="#slide-1"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-2"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-3"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-4"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-5"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-6"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-7"
-          class="slider__nav__link"
-        ></a>
-
-        <a
-          href="#slide-8"
-          class="slider__nav__link"
-        ></a>
-      </div>
     </header>
 
     <main class="main">
@@ -231,13 +233,11 @@
           </a>
         </div>
 
-        <div class="spots__slider main-container">
+        <div class="spots__slider">
           <div class="spots__slider__wrapper">
-            <div class="slider__slides">
+            <div class="spots__slider__slide">
               <div
-                id="slide1"
-                class="spots__slider__slide"
-              >
+                class="spots__slider__slide">
                 <div class="spots__item">
                   <img
                     src="./images/spots/ollantaytambo.jpg"
@@ -310,588 +310,21 @@
                   </a>
                 </div>
               </div>
-
-              <div
-                id="slide2"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope Canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake Louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide3"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide4"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide5"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide6"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide7"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="slide8"
-                class="spots__slider__slide"
-              >
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/ollantaytambo.jpg"
-                    alt="ollantaytambo"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Ollantaytambo
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Peru
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Ollantaytambo" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/antelope_canyon.jpg"
-                    alt="Antelope Canyon"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Antelope canyon
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    USA
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Antelope_Canyon" class="spots__link">
-                    read more
-                  </a>
-                </div>
-
-                <div class="spots__item">
-                  <img
-                    src="./images/spots/lake_louise.jpg"
-                    alt="Lake Louise"
-                    class="spots__img"
-                  >
-
-                  <h3 class="title--3">
-                    Lake louise
-                  </h3>
-
-                  <h4 class="spots__location title--4">
-                    Canada
-                  </h4>
-
-                  <p class="spots__desc description">
-                    Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                  </p>
-
-                  <a href="/Lake_Louise" class="spots__link">
-                    read more
-                  </a>
-                </div>
-              </div>
             </div>
+          </div>
 
-            <div class="spots__nav">
-              <a
-                href="#slide1"
-                class="slider__nav__link"
-              ></a>
+          <div id="swiper__text-2" class="swiper__text">
+            <h4 class="description swiper__text__title">
+              Outdoors Edition
+            </h4>
 
-              <a
-                href="#slide2"
-                class="slider__nav__link"
-              ></a>
+            <div class="swiper__text__line swiper__text__line--1"></div>
 
-              <a
-                href="#slide3"
-                class="slider__nav__link"
-              ></a>
+            <p class="description swiper__text__number">
+              2/8
+            </p>
 
-              <a
-                href="#slide4"
-                class="slider__nav__link"
-              ></a>
-
-              <a
-                href="#slide5"
-                class="slider__nav__link"
-              ></a>
-
-              <a
-                href="#slide6"
-                class="slider__nav__link"
-              ></a>
-
-              <a
-                href="#slide7"
-                class="slider__nav__link"
-              ></a>
-
-              <a
-                href="#slide8"
-                class="slider__nav__link"
-              ></a>
-            </div>
+            <div class="swiper__text__line swiper__text__line--2"></div>
           </div>
         </div>
       </div>
@@ -920,7 +353,7 @@
             Mea ea simul quaeque vocibus. Est ut verear voluptetum, vis at illud discere. Volumus rationibus cu sea, et summo ocurreret per, sit no audire scribentur. Vim et brute moderatius comprehensam. Argumentum disputando ea mel, sed clita congue an, equidem maluisset dispuntando ei ius. Vei ne enim duis. Nec ignota instructior te. Ipsum tacimates adversarium ut his. Fastidi adipisei ei cum, eum tollit percipit ne. Diam tantas te nec.
           </p>
 
-          <a href="/Sea" class="btn">
+          <a href="/Sea" class="sea__btn btn">
             Read more
           </a>
         </div>
@@ -941,8 +374,8 @@
 
         <div class="pick__slider">
           <div class="pick__slider__wrapper">
-            <div class="slider__slides">
-              <div id="slide--1" class="pick__slider__slide">
+            <div class="slider__slides swiper-wrapper">
+              <div class="pick__slider__slide">
                 <div class="pick__top grid">
                   <div class="pick__top__main grid__item-1-4">
                     <div class="pick__top__main__content">
@@ -964,109 +397,13 @@
                     <img
                       src="./images/pick/water_tori.jpg"
                       alt="Tori gate in water"
-                      class="pick__top__side__img"
+                      class="pick__top__side__img "
                     >
 
                     <img
                       src="./images/pick/golden_gate_bridge.jpg"
                       alt="Golden Gate bridge"
-                      class="pick__top__side__img"
-                    >
-                  </div>
-                </div>
-
-                <div class="pick__bottom grid">
-                  <img
-                    src="./images/pick/antelope_canyon.jpg"
-                    alt="Antelope canyon"
-                    class="pick__bottom__img grid__item-1-2"
-                  >
-
-                  <img
-                    src="./images/pick/road.jpg"
-                    alt="Winter road"
-                    class="pick__bottom__img grid__item-2-6"
-                  >
-                </div>
-              </div>
-
-              <div id="slide--2" class="pick__slider__slide">
-                <div class="pick__top grid">
-                  <div class="pick__top__main grid__item-1-4">
-                    <div class="pick__top__main__content">
-                      <h3 class="title--3">
-                        Flatiron
-                      </h3>
-
-                      <h4 class="pick__top__main__location title--4">
-                        USA
-                      </h4>
-
-                      <p class="pick__top__main__desc description">
-                        Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="pick__top__side grid__item-5-6">
-                    <img
-                      src="./images/pick/water_tori.jpg"
-                      alt="Tori gate in water"
-                      class="pick__top__side__img"
-                    >
-
-                    <img
-                      src="./images/pick/golden_gate_bridge.jpg"
-                      alt="Golden Gate bridge"
-                      class="pick__top__side__img"
-                    >
-                  </div>
-                </div>
-
-                <div class="pick__bottom grid">
-                  <img
-                    src="./images/pick/antelope_canyon.jpg"
-                    alt="Antelope canyon"
-                    class="pick__bottom__img grid__item-1-2"
-                  >
-
-                  <img
-                    src="./images/pick/road.jpg"
-                    alt="Winter road"
-                    class="pick__bottom__img grid__item-2-6"
-                  >
-                </div>
-              </div>
-
-              <div id="slide--3" class="pick__slider__slide">
-                <div class="pick__top grid">
-                  <div class="pick__top__main grid__item-1-4">
-                    <div class="pick__top__main__content">
-                      <h3 class="title--3">
-                        Flatiron
-                      </h3>
-
-                      <h4 class="pick__top__main__location title--4">
-                        USA
-                      </h4>
-
-                      <p class="pick__top__main__desc description">
-                        Ad lorem aliquid laoreet pri, possim iisque ad vim. Te gracies maluisset eum. Sit no platonem consetetur mediocritatem, in allienum.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="pick__top__side grid__item-5-6">
-                    <img
-                      src="./images/pick/water_tori.jpg"
-                      alt="Tori gate in water"
-                      class="pick__top__side__img"
-                    >
-
-                    <img
-                      src="./images/pick/golden_gate_bridge.jpg"
-                      alt="Golden Gate bridge"
-                      class="pick__top__side__img"
+                      class="pick__top__side__img pick__top__side__img--onTablet"
                     >
                   </div>
                 </div>
@@ -1086,23 +423,37 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="pick__nav">
-              <a
-                href="#slide--1"
-                class="slider__nav__link"
-              ></a>
+          <div id="swiper-button-prev-2" class="swiper-button-prev">
+            <img
+              class="swiper-button-prev-btn"
+              src="./images/icons/arrow.png"
+              alt="left"
+            >
+          </div>
 
-              <a
-                href="#slide--2"
-                class="slider__nav__link"
-              ></a>
+          <div id="swiper-button-next-2" class="swiper-button-next">
+            <img
+              class="swiper-button-next-btn"
+              src="./images/icons/arrow.png"
+              alt="right"
+            >
+          </div>
 
-              <a
-                href="#slide--3"
-                class="slider__nav__link"
-              ></a>
-            </div>
+          <div id="swiper__text-3" class="swiper__text">
+
+            <h4 class="description swiper__text__title">
+              Outdoors Edition
+            </h4>
+
+            <div class="swiper__text__line swiper__text__line--1"></div>
+
+            <p class="description swiper__text__number">
+              2/3
+            </p>
+
+            <div class="swiper__text__line swiper__text__line-pick2 swiper__text__line--2"></div>
           </div>
         </div>
       </div>
@@ -1319,5 +670,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>

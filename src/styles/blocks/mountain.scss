@@ -2,40 +2,31 @@
   position: relative;
   margin-bottom: 80px;
 
-  background-image: url(./images/mountains/bc_mountain.png);
-  background-repeat: no-repeat;
-  background-position: center -30%;
-
   &__wrapper {
     width: 100vw;
-    padding-left: 22%;
+    margin: 0 16px 0 16px;
   }
 
   &__top {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     &__title {
-      margin-bottom: 36px;
+      margin-bottom: 16px;
     }
 
     &__desc {
-      max-width: 45%;
+      max-width: 90%;
     }
   }
 
 
   &__block {
     &:not(:last-child) {
-
       margin-bottom: 40px;
       border-bottom: 1px solid $color-gray;
     }
 
-    display: flex;
-    max-width: 90%;
-
     padding-bottom: 40px;
-
 
     &__content {
       margin-right: 124px;
@@ -49,11 +40,15 @@
           margin-bottom: 28px;
         }
       }
+
+      &__btn {
+        margin: 0 auto 16px;
+      }
     }
 
     &__img {
-      width: $size-img-square;
       height: $size-img-square;
+      display: block;
     }
   }
 
@@ -67,5 +62,64 @@
     background-color: $color-gray;
     left: 10%;
 
+  }
+
+  @include onTablet {
+    background-image: url(./images/mountains/bc_mountain.png);
+    background-repeat: no-repeat;
+    background-position: center -30%;
+
+    &__wrapper {
+      padding-left: 22%;
+    }
+
+    &__top {
+      margin-bottom: 80px;
+
+      &__title {
+        margin-bottom: 36px;
+      }
+
+      &__desc {
+        max-width: 45%;
+      }
+    }
+
+    &__block {
+      &:not(:last-child) {
+
+        margin-bottom: 40px;
+        border-bottom: 1px solid $color-gray;
+      }
+
+      display: flex;
+      max-width: 90%;
+
+      padding-bottom: 40px;
+
+
+      &__content {
+        margin-right: 124px;
+
+        &__desc {
+          &--1 {
+            margin-bottom: 18px;
+          }
+
+          &--2 {
+            margin-bottom: 28px;
+          }
+        }
+
+        &__btn {
+          margin: 0;
+        }
+      }
+
+      &__img {
+        width: $size-img-square;
+        height: $size-img-square;
+      }
+    }
   }
 }

@@ -6,8 +6,10 @@
   &__item {
     @for $start from 1 through 6 {
       @for $end from $start through 6 {
-        &-#{$start}-#{$end} {
-          grid-column: #{$start} / #{$end};
+        @include onTablet {
+          &-#{$start}-#{$end} {
+            grid-column: #{$start} / #{$end};
+          }
         }
       }
     }

@@ -1,19 +1,15 @@
 .sideInfo {
-  width: 22%;
-
-  padding-left: 86px;
-
+  width: 35%;
+  padding-left: 40px;
   text-align: end;
 
   &__main {
     &__title {
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
 
     &__desc {
-      margin-bottom: 64px;
-
-      min-width: 136px;
+      margin-bottom: 36px;
     }
   }
 
@@ -37,6 +33,47 @@
       height: 1px;
 
       background: $color-white;
+    }
+  }
+
+  @include onTablet {
+    width: 22%;
+
+    padding-left: 86px;
+
+    &__main {
+      &__title {
+        margin-bottom: 18px;
+      }
+
+      &__desc {
+        margin-bottom: 64px;
+
+        min-width: 136px;
+      }
+    }
+
+    &__link {
+      position: relative;
+
+      color: $color-white;
+      font-weight: 700;
+      font-size: 12px;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        display: block;
+
+        right: 140%;
+        bottom: 0;
+
+        width: 64px;
+        height: 1px;
+
+        background: $color-white;
+      }
     }
   }
 }
